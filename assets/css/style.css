@@ -1,0 +1,37 @@
+html{
+	background-color: #DAA520;
+}
+body {
+	padding-top: 50px;
+	
+}
+
+.main-container {
+	margin: auto;
+	text-align: center;
+	width: 800px;
+	height: 600px;
+	border: 2px hidden black;
+	border-radius: 25px;
+	background-image: url("http://images2.fanpop.com/images/photos/5900000/rugrats-rugrats-5961650-500-375.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+@font-face {
+	font-family: myFirstFont;
+	src: url("../images/Cataclysmic.ttf");
+}
+
+h1{
+	padding-top: 90px;
+	font-family: myFirstFont;
+	font-size: 86px;
+}
+button {
+	font-family: myFirstFont;
+	font-size: 86px;
+	background-color: #DAA520;
+	margin-top: 120px;
+	border-radius: 20px;
+}
