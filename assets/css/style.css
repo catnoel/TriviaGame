@@ -26,7 +26,8 @@ body {
 h1{
 	padding-top: 90px;
 	font-family: myFirstFont;
-	font-size: 86px;
+	font-size: 102px;
+	text-shadow: 4px 4px 10px #DAA520;
 }
 button {
 	font-family: myFirstFont;
