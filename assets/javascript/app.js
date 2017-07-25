@@ -17,7 +17,7 @@ $(document).ready(function(){
 		var correctAnwser = $("#choice4").on().text();
 		var wrongAnswer1 = $("#choice1").on().text();
 		var	wrongAnswer2 = $("#choice2").on().text();
-		//var wrongAnswer3 = $("#choice3").on().text();
+		var wrongAnswer3 = $("#choice3").on().text();
 		
 		$(document).click(function(event){
 			var mouseClick = $(event.target).text();
@@ -27,7 +27,8 @@ $(document).ready(function(){
 			} else if ( mouseClick === wrongAnswer1){
 				$(".question-area-one").hide();
 				$(".questionOneAnswer").show();
-			} 
+			}  //here i wanted to build the page that shows the correct answer 
+				//depending upon what is clicked - i only got up to choice answer 1 = Spike
 		});
 	})
 
