@@ -36,3 +36,11 @@ button {
 	margin-top: 120px;
 	border-radius: 20px;
 }
+ .question-area-one ,h2 {
+ 	font-family: myFirstFont;
+	font-size: 42px;
+	background-color: #DAA520;
+
+ }
+
+

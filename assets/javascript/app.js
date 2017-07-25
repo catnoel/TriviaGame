@@ -1,55 +1,49 @@
-var rugratsTriviaGame = {
 
-	triviaQandA: {
-		q1: {
-			question: "Who's last name is Finster?",
-			a: "Spike",
-			b: "Phil",
-			c: "Tommy",
-			d: "Chuckie",
-			picture: "../images/chuckieq1.jpg"
-		},
-		q2: {
-			question: "Tommy and Angelica are...",
-			a: "Friends",
-			b: "Brother and sister",
-			c: "Cousins",
-			d: "Neighbors",
-			picture: "../images/angelica&tommyq2.jpeg"
-		},
-		q3: {
-			question: "What is Angelica's doll's name?",
-			a: "Cindy",
-			b: "Jessica",
-			c: "Cynthia",
-			d: "Elizabeth",
-			picture: "../images/cynthiadoll.jpg"
-		},
-		q4: {
-			question: "Who are the pair of twins?",
-			a: "Chuckie and Luckie",
-			b: "Dill and Phil",
-			c: "Dill and Lil",
-			d: "Phil and Lil",
-			picture: "../images/philandlil.jpg"
-		},
-		q5: {
-			question: "Tommy's dad job is...",
-			a: "Inventer",
-			b: "Zookeeper",
-			c: "Vet",
-			d: "Doctor",
-			picture: "../images/stupickles.png"
-		}
-	},
+$(document).ready(function(){
 
-	//start game
-	startGame: function() {
-		console.log("hey")
-	},
+	var hideQuestion1 = $(".question-area-one").hide();
+	var hideQuestionAnswer = $(".questionOneAnswer").hide();
+	var hideQuestion2 = $(".question-area-two").hide();
+	$(".question-area-three").hide();
+// in this section, i am attempting to use .text() or .val() to make a conditional statement
+// I am checking if the radio button associate with the string of the correct answer 
+// is clicked. if it is clicked then I want it to ...
+	
+
+	
+	var startQuestionOne = $("#start").on("click", function(){
+		$("#start").hide();
+		$(".question-area-one").show();
+		var correctAnwser = $("#choice4").on().text();
+		var wrongAnswer1 = $("#choice1").on().text();
+		var	wrongAnswer2 = $("#choice2").on().text();
+		//var wrongAnswer3 = $("#choice3").on().text();
+		
+		$(document).click(function(event){
+			var mouseClick = $(event.target).text();
+			console.log(mouseClick);
+			if (mouseClick === correctAnwser){
+				alert("correct!");
+			} else if ( mouseClick === wrongAnswer1){
+				$(".question-area-one").hide();
+				$(".questionOneAnswer").show();
+			} 
+		});
+	})
+
+	//here i wanted to make a conditional that checks if Question one was finish
+	//to continue with questions two
+		if(startQuestionOne === true) {
+			$(".question-area-one").hide();
+			$(".question-area-two").show();
+		}	
+
+	
+});
+	
 
 
-};
+
 
 
 
